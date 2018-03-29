@@ -2,6 +2,7 @@ body,html{
 	margin: 0;
 	padding: 0;
 	height: 100%;
+	position: static;
 }
 body{
 	 background: linear-gradient(-30deg,red, yellow);
@@ -11,7 +12,7 @@ body{
 	top: 1%;
 	left: 42%;
 	width: 690px;
-	height: 650px;
+	height: 620px;
 	display: grid;
 	grid-gap: 1px;
 	border:5px solid #221f27;
@@ -32,7 +33,7 @@ body{
 .Button{
 	margin-left: 4%;
 	margin-top: 5px;
-	margin-bottom: 5%;
+	margin-bottom: 4%;
 	width: 90%;
 	height: 50px;
 	font-family: "Indie Flower", cursive, sans-serif;
