@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<title>Etch-a-Sketch</title>
 </head>
@@ -8,13 +9,17 @@
 	<div class="Board">
 
 	</div>
-	<input type="button" name="Reset" value="Reset" class="reset" onclick="ResetBoard();"><br>
-	<input type="button" name="Resize" value="Resize" class="resize" onclick="ResizeBoard();"><br>
-	<input type="button" name="ChangeColorToRed" value="Red" class="red" onclick="SetColorToRed();"><br>
-	<input type="button" name="Resize" value="Erase" class="erase" onclick="EraseAllColorEffect();"><br>
-	<input type="button" name="ChangeColorToRed" value="Green" class="green" onclick="SetColorToGreen();"><br>
-	<input type="color" name="RangeofColor" class="SetColor" onchange="SetColorOfUserChoise();"><br>
-	<input type="button" name="RainBow" value="RainBow" class="rainbow" onclick="SetColorEffectAtRandom();"><br>
+	<div class="AllButtons">
+		<div class="Heading">Etch-a-Sketch</div>
+		<div class="Button" onclick="ResetBoard();">RESET</div>
+		<div class="Button" onclick="ResizeBoard();">RESIZE</div>
+		<div class="Button" onclick="EraseAllColorEffect();">ERASE</div>
+		<div class="Button" onclick="SetColorToRed();">RED</div>
+		<div class="Button" onclick="SetColorToGreen();">GREEN</div>
+		<div class="Button" onclick="SetColorEffectAtRandom();">RAINBOW</div>
+		<input type="color" name="RangeofColor" class="SetColor Button" onchange="SetColorOfUserChoise();">
+	</div>
+
 <script type="text/javascript" src="Etch.js"></script>
 </body>
 </html>

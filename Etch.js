@@ -92,4 +92,5 @@ function ResetBoard() {
 		AllBoxs.forEach(function(Box){
 			Box.style.backgroundColor = "rgb(256,256,256)";
 		});
+		SetColorProperty(0,0,0,0,1);
 }

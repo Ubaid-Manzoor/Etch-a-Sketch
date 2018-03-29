@@ -1,14 +1,61 @@
+body,html{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+body{
+	 background: linear-gradient(-30deg,red, yellow);
+}
 .Board{
 	position: absolute;
 	top: 1%;
-	left: 33%;
-	width: 500px;
-	height: 550px;
+	left: 42%;
+	width: 690px;
+	height: 650px;
 	display: grid;
 	grid-gap: 1px;
-	border:5px solid black;
+	border:5px solid #221f27;
+	border-radius: 10px;
 }
 .Box{
 	position: relative;
 	border: 1px solid black;
+}
+.AllButtons{
+	position: absolute;
+	width: 500px;
+	height: 100%;
+	 background: linear-gradient(-30deg,#291616,#e4e401);
+	text-align: center;
+	border-right: 3px solid #221f27;
+}
+.Button{
+	margin-left: 4%;
+	margin-top: 5px;
+	margin-bottom: 5%;
+	width: 90%;
+	height: 50px;
+	font-family: "Indie Flower", cursive, sans-serif;
+	border: 2px solid #917171;
+	border-radius: 10px;
+	transition: all 0.2s ease-in-out;
+	font-size: 30px;
+}
+.Button:hover{
+	transform: scale(1.1);
+	box-shadow: 5px 5px 30px yellow;
+	text-shadow: 5px 5px 10px #000000;
+}
+.SetColor:hover{
+	transform: scale(1);
+}
+.Button:active{
+	transform: scale(1);
+}
+.Heading{
+	background-color: #221f27;
+	color:white;
+	height: 100px;
+	font-family: "Indie Flower";
+	font-size: 50px;
 }
