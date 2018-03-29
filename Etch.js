@@ -38,14 +38,11 @@ function SetColorProperty(R,G,B,Hex,WhichFormateToTake){
 	
 		if(WhichFormateToTake == 1){
 				AllBoxs.forEach(function(Box){
-					console.log('I Am Here222');
 				Box.addEventListener('mouseover' , () => Box.style.backgroundColor = `rgb(${R},${G},${B})`);
-				console.log('I Am Here111');
 			});
 		}
 		else
 		{
-			console.log('I Am Here11111');
 			AllBoxs.forEach(function(Box){
 				Box.addEventListener('mouseover' , () => Box.style.backgroundColor = Hex);
 			});
@@ -74,13 +71,7 @@ function SetColorEffectAtRandom() {
 	AllBoxs.forEach(HelperFunction);
 }
 function HelperFunction(Box) {
-	Box.addEventListener('mouseover',SetColor);
-}
-function SetColor() {
-	let R = Math.floor(Math.random() * 256);
-	let B =Math.floor(Math.random() * 256);
-	let G = Math.floor(Math.random() * 256); 
-    SetColorProperty(R,B,G,0,1);
+	Box.addEventListener('mouseover',() => Box.style.backgroundColor = `rgb(${Math.floor(Math.random() * 256)},${Math.floor(Math.random() * 256)},${Math.floor(Math.random() * 256)})`);
 }
 function RemoveEventListener(){
 		let AllBoxs = document.querySelectorAll('.Box');
