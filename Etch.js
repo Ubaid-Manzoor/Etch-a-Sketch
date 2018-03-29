@@ -20,6 +20,7 @@ function MakeGrid(WidthofGrid) {
 		}
 	}
 	//Set colorChange on MouseHover on New Grid
+	ResetBoard();
 	SetColorProperty(0,0,0);
 }
 Body.addEventListener('onload', MakeGrid(16)); // Setting Board to 16 x 16 
