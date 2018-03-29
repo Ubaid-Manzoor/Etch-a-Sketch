@@ -76,7 +76,7 @@ function HelperFunction(Box) {
 function RemoveEventListener(){
 		let AllBoxs = document.querySelectorAll('.Box');
 		AllBoxs.forEach(function(Box){
-			Box.removeEventListener('mouseover',SetColor);
+			Box.removeEventListener('mouseover',() => Box.style.backgroundColor = `rgb(${Math.floor(Math.random() * 256)},${Math.floor(Math.random() * 256)},${Math.floor(Math.random() * 256)})`);
 		});
 }
 function ResetBoard() {
